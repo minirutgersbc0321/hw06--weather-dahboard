@@ -1,0 +1,51 @@
+/* Site header styling */
+#siteHeader {
+  text-align: center;
+  padding: 10px 0;
+  background-color: #343a40;
+  color: white;
+}
+
+/* H2 Styling */
+h2 {
+  font-size: 1.4rem;
+}
+
+/* Background color for column holding searchbar and search history*/
+#searchCol {
+  background-color: rgb(235, 233, 233);
+}
+
+/* Search history styling*/
+#pastSearches {
+  width: 97%;
+}
+
+#weekHeader {
+  margin: 20px 0px 20px 30px;
+}
+
+/* 5-Day Forecast styling */
+.weekForecast {
+  float: left;
+  max-width: 10rem;
+  padding: 3px;
+  margin-left: 30px;
+}
+
+/* Styles on screens less than 540px 
+-------------------------------------------------- */
+
+@media screen and (max-width: 540px) {
+  #weekForecastContainer {
+    padding-left: 12%;
+  }
+
+  #searchCol {
+    padding-bottom: 30px;
+  }
+
+  #searchHistoryUl li {
+    width: 50%;
+  }
+}
