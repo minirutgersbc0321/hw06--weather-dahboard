@@ -1,49 +1,40 @@
-# hw06--weather-dahboard
+Home work6- Weather Dashboard
+https://minirutgersbc0321.github.io/hw06--weather-dashboard/
 
-# 06 Server-Side APIs: Weather Dashboard
+https://github.com/minirutgersbc0321/hw06--weather-dashboard
 
-Developers are often tasked with retrieving data from another application's API and using it in the context of their own. Third-party APIs allow developers to access their data and functionality by making requests with specific parameters to a URL. Your challenge is to build a weather dashboard that will run in the browser and feature dynamically updated HTML and CSS.
+Summary
+This applicaiton is a weather dashboard with search functionality to find current weather conditions and the future weather outlook for multiple cities. This application utilizes the AJAX to hook into OpenWeather API to retrieve data in JSON format. Using dynamically updated HTML and CSS powered by jQuery we can show the user the follwoing information: Displayed the following under current weather conditions:
 
-Use the [OpenWeather API](https://openweathermap.org/api) to retrieve weather data for cities. The documentation includes a section called "How to start" that will provide basic setup and usage instructions. Use `localStorage` to store any persistent data.
+City
+Date
+Icon image (visual representation of weather conditions)
+Temperature
+Humidity
+Wind speed
+UV index Include a 5-Day Forecast below the current weather conditions. Each day for the 5-Day Forecast should display the following:
+Date
+Icon image (visual representation of weather conditions)
+Temperature
+Humidity
 
-## User Story
 
-```
-AS A traveler
-I WANT to see the weather outlook for multiple cities
-SO THAT I can plan a trip accordingly
-```
+Technologies Used:
 
-## Acceptance Criteria
+jQuery - Used for event listeners of parent and childeren elements as well as to store and recall those varible in local storage to be displayed dynamically in HTML on the page.
+momentjs - Used to pull current date for the current city.
+javascript - Used to dynamically change html and store user-input.
+Bootstrap - Used to pull existing html and CSS for creating resposive organizational structer and styling for the site.
+HTML - Used to create elements on the DOM
+CSS - Styles html elements on page
+Git - Version control system to track changes to source code
+GitHub - Hosts repository that can be deployed to GitHub Pages.
 
-```
-GIVEN a weather dashboard with form inputs
-WHEN I search for a city
-THEN I am presented with current and future conditions for that city and that city is added to the search history
-WHEN I view current weather conditions for that city
-THEN I am presented with the city name, the date, an icon representation of weather conditions, the temperature, the humidity, the wind speed, and the UV index
-WHEN I view the UV index
-THEN I am presented with a color that indicates whether the conditions are favorable, moderate, or severe
-WHEN I view future weather conditions for that city
-THEN I am presented with a 5-day forecast that displays the date, an icon representation of weather conditions, the temperature, and the humidity
-WHEN I click on a city in the search history
-THEN I am again presented with current and future conditions for that city
-WHEN I open the weather dashboard
-THEN I am presented with the last searched city forecast
-```
 
-The following image demonstrates the application functionality:
+Built With:
 
-![weather dashboard demo](./Assets/06-server-side-apis-homework-demo.png)
-
-## Review
-
-You are required to submit the following for review:
-
-- The URL of the deployed application.
-
-- The URL of the GitHub repository. Give the repository a unique name and include a README describing the project.
-
----
-
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+API
+jQuery
+HTML
+CSS
+Boostrap
