@@ -9,13 +9,14 @@
 /* H2 Styling */
 h2 {
   font-size: 1.4rem;
+  background-color: gold;
+
 }
 
 /* Background color for column holding searchbar and search history*/
 #searchCol {
   background-color: rgb(235, 233, 233);
 }
-
 /* Search history styling*/
 #pastSearches {
   width: 97%;

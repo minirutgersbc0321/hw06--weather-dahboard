@@ -55,7 +55,7 @@ function searchCity(cityname) {
 
 var lat = response.coord.lat;
 var lon = response.coord.lon;
-var queryURLUV = "https://api.openweathermap.org/data/2.5/uvi?&appid=&lat=7165e9cdc3f199bfa2625e9c1e18f92d" + lat  + "&lon=" + lon;
+var queryURLUV = "https://api.openweathermap.org/data/2.5/uvi?&appid=7165e9cdc3f199bfa2625e9c1e18f92d&lat="  + lat + "&lon=" + lon;
 
         $.ajax({
             url: queryURLUV,
@@ -138,12 +138,14 @@ pageLoad();
 
 $("#select-city").on("click", function (event) {
     // Preventing the button from trying to submit the form......
+  console.log("test")
     event.preventDefault();
     // Storing the city name........
     var cityInput = $("#city-input").val().trim();
 
     //save search term to local storage.....
-    var textContent = $(this).siblings("input").val();
+    var textContent
+        = $(this).siblings("input").val();
     var storearr = [];
     storearr.push(textContent);
     localStorage.setItem('cityName', JSON.stringify(storearr));
